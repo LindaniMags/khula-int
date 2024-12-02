@@ -19,7 +19,7 @@ const Farmer = () => {
         >
           <div className="top-text">
             <h3>Your Application Checklist</h3>
-            <p>Cumolete the following to submit your application</p>
+            <p>Complete the following to submit your application</p>
           </div>
           <button onClick={apply} className="continue">
             Start Application
