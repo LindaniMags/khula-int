@@ -291,6 +291,7 @@ ul li {
 }
 .kyc-items-con {
   display: flex;
+  gap: 10px;
 }
 .kyc-items {
   display: flex;
@@ -305,6 +306,7 @@ ul li {
 }
 .profile-items-con {
   display: flex;
+  gap: 10px;
 }
 .profile-items {
   display: flex;
@@ -320,6 +322,7 @@ ul li {
 }
 .finance-items-con {
   display: flex;
+  gap: 10px;
 }
 .finance-items {
   display: flex;
@@ -337,6 +340,7 @@ ul li {
 
 .uploads-items-con {
   display: flex;
+  gap: 10px;
 }
 .uploads-items {
   display: flex;
@@ -373,4 +377,12 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+
+.circle-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a7d3e;
+  background-color: #c2d7c4;
 }

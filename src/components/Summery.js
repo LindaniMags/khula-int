@@ -107,7 +107,7 @@ const Farmer = () => {
           </div>
           <div className="profile-con">
             <div className="item-title">
-              <p>In Progress...</p>
+              <p className="green">. . . In Progress</p>
               <strong>
                 <p>3. Farm Profile</p>
               </strong>

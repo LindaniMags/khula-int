@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { IoMdCheckmark } from "react-icons/io";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
 import { useDispatch, useSelector } from "react-redux";
@@ -185,7 +186,7 @@ const Application = () => {
             <p className="sml-txt">Check if you qualify</p>
           </div>
           <div className="apply-tab">
-            <p className="green">In progress...</p>
+            <p className="green">. . . In Progress</p>
             <strong>
               <p>3. Farm Profile</p>
             </strong>
@@ -214,7 +215,9 @@ const Application = () => {
             </div>
             <div className="status-details">
               <div className="farm-checks">
-                <div className="circle done"></div>
+                <div className="circle circle-check">
+                  <IoMdCheckmark />
+                </div>
                 <div className="vl"></div>
                 <div className="circle"></div>
                 <div className="vl"></div>
