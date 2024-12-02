@@ -1,31 +1,10 @@
 import React from "react";
-import { get } from "react-hook-form";
-import { useSelector } from "react-redux";
-import { getFarmState } from "../features/user/farmSlice";
-import { getChoiceState } from "../features/user/choiceSlice";
-import { getLocationState } from "../features/user/locationSlice";
-import { getLeasedLandState } from "../features/user/leaseHecSlice";
-import { getLeaseLengthState } from "../features/user/leaseLenSlice";
-import { getOwnedHecState } from "../features/user/ownedHecSlice";
-import { getOwnershipState } from "../features/user/ownershipSlice";
-import { getIrrigatedState } from "../features/user/irrigatedSlice";
-import { getDrylandState } from "../features/user/drylandSlice";
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 import Navbar from "../components/Navbar";
 
 const Farmer = () => {
   const navigate = useNavigate();
-
-  const leaseLength = useSelector(getLeaseLengthState);
-  const dryland = useSelector(getDrylandState);
-  const irrigated = useSelector(getIrrigatedState);
-  const ownedHec = useSelector(getOwnedHecState);
-  const leasedLand = useSelector(getLeasedLandState);
-  const location = useSelector(getLocationState);
-  const ownership = useSelector(getOwnershipState);
-  const choice = useSelector(getChoiceState);
-  const farm = useSelector(getFarmState);
 
   const apply = () => {
     navigate("/apply");

@@ -58,7 +58,15 @@ ul li {
 .cart-log {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+.cart-con {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 180px;
+  align-items: flex-end;
 }
 /*Application section*/
 .apply-con {
@@ -77,6 +85,9 @@ ul li {
 }
 .save-exit {
   text-align: center;
+}
+.save-exit:hover {
+  cursor: pointer;
 }
 .sml-txt {
   font-size: 14px;
@@ -270,7 +281,9 @@ ul li {
   border-radius: 4px;
   padding: 10px;
 }
-
+.continue:hover {
+  cursor: pointer;
+}
 /*KYC Section*/
 .kyc-con {
   padding: 15px;

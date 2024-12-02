@@ -32,11 +32,24 @@ const Navbar = () => {
           </nav>
         </div>
         <div className="cart-log">
-          <p>Logout</p>
           <div className="cart-con">
-            <p>0</p>
-            <p>Cart</p>
+            <p
+              style={{
+                backgroundColor: "crimson",
+                borderRadius: "50%",
+                height: "20px",
+                width: "20px",
+              }}
+            >
+              1
+            </p>
+            <strong>
+              <p style={{ paddingRight: "25px" }}>Cart</p>
+            </strong>
           </div>
+          <strong>
+            <p>Logout</p>
+          </strong>
         </div>
       </div>
     </div>
