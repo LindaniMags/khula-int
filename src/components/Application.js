@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { GoDot } from "react-icons/go";
+import { GoDotFill } from "react-icons/go";
 import { IoMdCheckmark } from "react-icons/io";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
@@ -96,6 +98,11 @@ const Application = () => {
     dispatch(setChoice("No"));
   };
 
+  /**
+   * Handles form submission by dispatching actions to update the Redux store
+   * with the form data and navigates to the summary page.
+   *
+   */
   const onSubmit = (data) => {
     console.log(data.name);
     console.log(data.describe);
@@ -129,6 +136,12 @@ const Application = () => {
     const apiKey =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0NiwidXNlclJvbGVzIjpbeyJpZCI6MSwibmFtZSI6ImZhcm1lciJ9XSwiX19fX2todWxhX19zZWNyZXRfX19fIjoiNjIyMjIzMzM2NjQtMTY5ODI0ODI4MDYzNyIsImlhdCI6MTY5ODI0ODI4MH0.KH1SO9KpCveqI5sYKTBesoyjuce69ZKCbitdXChZTR0";
 
+    /**
+     * Fetches data from a specified GraphQL endpoint using the provided URL and API key.
+     * The fetched data is set to the component's state, and any errors encountered during
+     * the fetch process are logged to the console. The loading state is updated once
+     * the fetch operation is complete.
+     */
     const fetchData = async () => {
       try {
         const response = await fetch(url, {
@@ -186,7 +199,14 @@ const Application = () => {
             <p className="sml-txt">Check if you qualify</p>
           </div>
           <div className="apply-tab">
-            <p className="green">. . . In Progress</p>
+            <p className="green">
+              <GoDotFill style={{ color: "#C2D7C4" }} />
+              <GoDotFill style={{ color: "#C2D7C4" }} />
+              <GoDotFill />
+              <GoDot />
+              <GoDot />
+              <strong>In Progress</strong>
+            </p>
             <strong>
               <p>3. Farm Profile</p>
             </strong>

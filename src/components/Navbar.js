@@ -39,6 +39,7 @@ const Navbar = () => {
                 borderRadius: "50%",
                 height: "20px",
                 width: "20px",
+                color: "white",
               }}
             >
               1

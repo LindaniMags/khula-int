@@ -1,11 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router";
-
+import { GoDot } from "react-icons/go";
+import { GoDotFill } from "react-icons/go";
 import Navbar from "../components/Navbar";
 
+/**
+ * Farmer is a component that renders a summary of the application process.
+ */
 const Farmer = () => {
   const navigate = useNavigate();
 
+  /**
+   * Navigates the user to the application page.
+   */
   const apply = () => {
     navigate("/apply");
   };
@@ -35,11 +42,30 @@ const Farmer = () => {
             <div className="credit-items-con">
               <div className="credit-item">
                 <p>score</p>
-                <p>642 Low Score</p>
+                <p>
+                  <span
+                    style={{
+                      color: "#C42727",
+                      fontSize: "20px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    642
+                  </span>{" "}
+                  Low Score
+                </p>
               </div>
               <div className="credit-item">
                 <p>status</p>
-                <p>High Risk</p>
+                <p
+                  style={{
+                    color: "#C42727",
+                    fontSize: "23px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  High Risk
+                </p>
               </div>
               <div className="credit-item">
                 <p>Issue 1</p>
@@ -107,7 +133,14 @@ const Farmer = () => {
           </div>
           <div className="profile-con">
             <div className="item-title">
-              <p className="green">. . . In Progress</p>
+              <p className="green">
+                <GoDotFill style={{ color: "#C2D7C4" }} />
+                <GoDotFill style={{ color: "#C2D7C4" }} />
+                <GoDotFill />
+                <GoDot />
+                <GoDot />
+                <strong>In Progress</strong>
+              </p>
               <strong>
                 <p>3. Farm Profile</p>
               </strong>
